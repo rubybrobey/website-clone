@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    /* This makes sure that the padding and border are included in the total width and height of the elements. */
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    /* basline font size for this document */
+    font-size: 16px;
+    margin: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 15px;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: rgb(208, 2, 27);
+    /* 20px left and right 40px top and bottom */
+    padding: 20px 20px;
+    /* align all items in grid vertically */
+    align-items: center;
+}
+
+
+header h1 {
+    /* span 6 of the header column */
+    grid-column: 3 / span 6;
+    color: white;
+
+}
+
+header span {
+    /* start on line 7 and span 6 */
+    grid-column: 9 / span 3;
+    /* move span content to the end horizontally */
+    justify-self: end;
+}
+
+
+header button {
+    color: white;
+    /* transparent background colo */
+    background-color: transparent;
+    /* space to the left of the box border */
+    margin-left: 20px;
+    padding: 10px 16px;
+    border: none;
+    font-size: 1rem;
+}
+
+span a {
+    color: white;
+    /* space to the left of the box border */
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+ion-icon {
+    color: white;
+    margin-right: 5px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* SECTION */
+
+section {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0px;
+    align-items: center;
+}
+
+section nav {
+    grid-column: 3 /span 6;
+}
+
+section span {
+    grid-column: 9 / span 3;
+    justify-self: end;
+    background-color: rgb(208, 2, 27);
+    color: white;
+    border-radius: 3px;
+    padding: 10px 10px;
+
+}
+
+section nav a {
+    color: black;
+}
+
+section a {
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: 300;
+}
+
+section ion-icon {
+    color: black;
+}
+
+
+
+/* MAIN CONTENTS */
+
+main {
+    max-width: 100%;
+    padding: 50px 200px;
+    /* margin: 0px 80px; */
+    /* padding: 40px 300px; */
+    background-color: rgb(235, 235, 235)
+}
+
+.cardtop {
+    margin-top: 20px;
+    grid-column: span 12;
+    background-color: white;
+    border: 5px solid rgb(225, 223, 223);
+    text-align: center;
+    display: flex;
+
+
+}
+
+.cardtop div {
+    padding: 0px 0px;
+}
+
+/* .text { 
+    margin-top: 20px;
+    grid-column: 7 /span 4;
+}*/
+
+
+
+
+
+img {
+    /* max-width: 300px; */
+    /* max-height: 300px; */
+    /* 1100% of the parent container */
+    width: 100%;
+}
+
+.card {
+    background-color: white;
+    /* align text in cards center */
+    text-align: center;
+    /* card to span 4 columns each */
+    grid-column: span 4;
+    /* no padding */
+    padding: 0;
+    /* card border */
+    border: 5px solid rgb(225, 223, 223);
+}
